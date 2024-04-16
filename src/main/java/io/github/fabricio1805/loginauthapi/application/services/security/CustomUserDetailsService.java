@@ -6,12 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import io.github.fabricio1805.loginauthapi.domain.entity.user.User;
 import io.github.fabricio1805.loginauthapi.infrastructure.repository.user.UserRepository;
 
-@Service
+@Component
 public class CustomUserDetailsService implements UserDetailsService{
 
   @Autowired

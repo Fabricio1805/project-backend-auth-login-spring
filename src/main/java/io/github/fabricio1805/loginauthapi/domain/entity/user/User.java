@@ -43,4 +43,11 @@ public class User {
   @UpdateTimestamp
   @Column(name = "updated_at") 
   private LocalDateTime updatedAt;
+
+
+  public User(String email, String name, String password) {
+    this.email = email;
+    this.name = name;
+    this.password = password;
+  }
 }
